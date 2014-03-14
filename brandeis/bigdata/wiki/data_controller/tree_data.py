@@ -26,13 +26,9 @@ class Node_Data(object):
         self.parent_node = parent_node
         self._node_params = node_param
         self.sub_nodes = []
-        """
-        A class object to keep track of explored categories 
-        """
-        if 'cmtitle' in node_param:
-            Node_Data.checked_subcat = {node_param['cmtitle']: 1}
-    
+        
     def crawl_data(self):
+        
         """
         Crawl all pages
         """
@@ -47,7 +43,7 @@ class Node_Data(object):
         self._crawler.crawl()
         crawled = self._crawler.xml_parse()
         if crawled != None:
-            self.pages =  [{'pageid': page['pageid'], 
+            self.pages = [{'pageid': page['pageid'],
                             'title': page['title']} 
                            for page in crawled['page'] if Named_Entity.is_name_candidate(page['title'])]
             print len(self.pages)
@@ -59,15 +55,15 @@ class Node_Data(object):
         """
         del temp_params['cmstartsortkey']
         del temp_params['cmendsortkey']
-        temp_params['cmtype'] = 'subcats'
+        temp_params['cmtype'] = 'subcat'
         
         self._crawler = Category_Crawler(temp_params)
         self._crawler.crawl()
         crawled = self._crawler.xml_parse()
         if crawled != None:
-            self.subcats = [{'pageid': subcat['pageid'], 
+            self.subcats = [{'pageid': subcat['pageid'],
                             'title': subcat['title']} 
-                           for subcat in crawled['subcats']]
+                           for subcat in crawled['subcat']]
         
         """
         Crawl a special type of category:
@@ -80,20 +76,26 @@ class Node_Data(object):
         self._crawler.crawl()
         crawled = self._crawler.xml_parse()
         if crawled != None:
-            self.special_subcat = [{'pageid': subcat['pageid'], 
+            self.special_subcats = [{'pageid': subcat['pageid'],
                                     'title': subcat['title']} 
-                                   for subcat in crawled['subcats'] if special_str in subcat['title']]
-            self.subcats += self.special_subcat
+                                   for subcat in crawled['subcat'] if special_str in subcat['title']]
         
         if 'subcats' in self.__dict__:
-            for subcat in self.subcats:
-                print subcat
-                if subcat['title'] not in Node_Data.checked_subcat:
+            for subcat in (self.subcats + self.special_subcats):
+                if subcat['title'] not in Tree_Data.checked_subcat:
+                    """
+                    It is important to put this check first, 
+                    because if it's put after subnode.crawl_data(),
+                    a failing crawled node could run again and again. 
+                    """
+                    Tree_Data.checked_subcat[subcat['title']] = 1
+                    print subcat['title']
                     subcat_params = {'cmtitle': subcat['title'] }
-                    subnode = Node_Data( self, subcat_params )
+                    subnode = Node_Data(self, subcat_params)
                     subnode.crawl_data()
-                    Node_Data.checked_subcat[subcat['title']] = 1
-                    self.sub_nodes.append( subnode )
+                    
+                    
+                    self.sub_nodes.append(subnode)
     
 class Tree_Data(object):
     '''
@@ -110,6 +112,12 @@ class Tree_Data(object):
         '''
         self._root_params = root_params
         self.root = Node_Data(None, root_params)
+        
+        """
+        A class object to keep track of explored categories 
+        """
+        if 'cmtitle' in self._root_params:
+            Tree_Data.checked_subcat = {self._root_params['cmtitle']: 1}
     
     def crawl_data(self):
         self.root.crawl_data()
@@ -118,10 +126,10 @@ class Tree_Data(object):
         with open(file_name, 'w') as write_file:
             pickle.dump({'root_param': self._root_params,
                          'tree': self.root}
-                        ,write_file)
+                        , write_file)
     
     @classmethod
-    def load_from_file( cls, file_name):
+    def load_from_file(cls, file_name):
         with open(file_name, 'r') as read_file:
             o = pickle.load(read_file)
             _root_params = o['root_param']

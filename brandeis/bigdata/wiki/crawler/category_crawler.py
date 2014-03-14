@@ -50,7 +50,10 @@ class Category_Crawler(object):
                 del self._configurations[key]
         
         if 'cmtitle' in self._configurations and 'cmpageid' in self._configurations:
-            raise Exception('Parameters errors: cmtitle and cmpageid are mutually exclusive')
+            """
+            Just use 'cmpageid'
+            """
+            del self._configurations['cmtitle']
         
         for key in CONSTRAINTS:
             if key in self._configurations:
