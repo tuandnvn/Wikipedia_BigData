@@ -4,20 +4,21 @@ Created on Mar 14, 2014
 @author: Tuan
 '''
 
-class Named_Entity(object):
+class Named_Entity():
     '''
     Util class to process named entity
     Every method related to named entity processing are put here
     '''
 
 
-    def __init__(self, string_form):
+    def __init__(self):
         '''
         Taking the string form of the named entity as only input
         '''
-        self.string_form = string_form
-        
-    def is_name_candidate(self):
+        pass
+    
+    @classmethod
+    def is_name_candidate( cls, string_form ):
         '''
         Name of people in Wikipedia is generally have the following format
         capitalized_name ( disambiguation_tag )
@@ -28,7 +29,7 @@ class Named_Entity(object):
         Issues:
         -    Couldn't distinguish between names of people and names of organizations.
         '''
-        tokens = [token for token in self.string_form.split(' ') if (token[0] != '(' and token[-1] != ')')]
+        tokens = [token for token in string_form.split(' ') if (token[0] != '(' and token[-1] != ')')]
         capitalized = [token for token in tokens if token[0].isupper()]
         if 3*len(capitalized) >  2*len(tokens):
             return True

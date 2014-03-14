@@ -7,6 +7,7 @@ import copy
 import pickle
 
 from brandeis.bigdata.wiki.crawler.category_crawler import Category_Crawler
+from brandeis.bigdata.wiki.language_utils.named_entity import Named_Entity
 
 
 class Node_Data(object):
@@ -25,6 +26,11 @@ class Node_Data(object):
         self.parent_node = parent_node
         self._node_params = node_param
         self.sub_nodes = []
+        """
+        A class object to keep track of explored categories 
+        """
+        if 'cmtitle' in node_param:
+            Node_Data.checked_subcat = {node_param['cmtitle']: 1}
     
     def crawl_data(self):
         """
@@ -41,23 +47,27 @@ class Node_Data(object):
         self._crawler.crawl()
         crawled = self._crawler.xml_parse()
         if crawled != None:
-            self.pages =  crawled['page']
+            self.pages =  [{'pageid': page['pageid'], 
+                            'title': page['title']} 
+                           for page in crawled['page'] if Named_Entity.is_name_candidate(page['title'])]
             print len(self.pages)
         
         """
         Crawl all subcategories
         Category format:
-        {'pageid': '14557890', 'ns': '14', 'type': 'subcat', 'title': 'Category:Economists by area of research'}
+        {'pageid': '14557890', 'ns': '14', 'type': 'subcats', 'title': 'Category:Economists by area of research'}
         """
         del temp_params['cmstartsortkey']
         del temp_params['cmendsortkey']
-        temp_params['cmtype'] = 'subcat'
+        temp_params['cmtype'] = 'subcats'
         
         self._crawler = Category_Crawler(temp_params)
         self._crawler.crawl()
         crawled = self._crawler.xml_parse()
         if crawled != None:
-            self.subcat = crawled['subcat']
+            self.subcats = [{'pageid': subcat['pageid'], 
+                            'title': subcat['title']} 
+                           for subcat in crawled['subcats']]
         
         """
         Crawl a special type of category:
@@ -70,16 +80,20 @@ class Node_Data(object):
         self._crawler.crawl()
         crawled = self._crawler.xml_parse()
         if crawled != None:
-            self.special_subcat = [subcat for subcat in crawled['subcat'] if special_str in subcat['title']]
-            self.subcat += self.special_subcat
+            self.special_subcat = [{'pageid': subcat['pageid'], 
+                                    'title': subcat['title']} 
+                                   for subcat in crawled['subcats'] if special_str in subcat['title']]
+            self.subcats += self.special_subcat
         
-        if 'subcat' in self.__dict__:
-            for subcat in self.subcat:
+        if 'subcats' in self.__dict__:
+            for subcat in self.subcats:
                 print subcat
-                subcat_params = {'cmtitle': subcat['title'] }
-                subnode = Node_Data( self, subcat_params )
-                subnode.crawl_data()
-                self.sub_nodes.append( subnode )
+                if subcat['title'] not in Node_Data.checked_subcat:
+                    subcat_params = {'cmtitle': subcat['title'] }
+                    subnode = Node_Data( self, subcat_params )
+                    subnode.crawl_data()
+                    Node_Data.checked_subcat[subcat['title']] = 1
+                    self.sub_nodes.append( subnode )
     
 class Tree_Data(object):
     '''
@@ -101,14 +115,17 @@ class Tree_Data(object):
         self.root.crawl_data()
     
     def save_to_file(self, file_name):
-        with open(file_name, 'w') as file:
+        with open(file_name, 'w') as write_file:
             pickle.dump({'root_param': self._root_params,
                          'tree': self.root}
-                        ,file)
+                        ,write_file)
     
-    def load_from_file(self, file_name):
-        with open(file_name, 'r') as file:
-            o = pickle.load(file)
-            self._root_params = o['root_param']
-            self.root = o['tree']
+    @classmethod
+    def load_from_file( cls, file_name):
+        with open(file_name, 'r') as read_file:
+            o = pickle.load(read_file)
+            _root_params = o['root_param']
+            new_tree = Tree_Data(_root_params)
+            new_tree.root = o['tree']
+            return new_tree
         
