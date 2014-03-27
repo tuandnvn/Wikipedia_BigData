@@ -3,7 +3,11 @@ Created on Mar 14, 2014
 
 @author: Tuan
 '''
-
+"""
+Some other thing to do:
+remove Category:Something by someone
+remove Category:Person_proper_name 
+"""
 class Named_Entity():
     '''
     Util class to process named entity

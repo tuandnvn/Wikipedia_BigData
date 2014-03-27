@@ -1,26 +1,18 @@
-import urllib
-import xml.etree.ElementTree as ET
-import lxml, re
-import copy
 '''
 Created on Mar 14, 2014
 
 @author: Tuan
 '''
-KEY_SET = ['cmtitle', 'cmpageid', 'cmnamespace', 'cmtype', 'cmstart',
-                      'cmend', 'cmstartsortkey', 'cmendsortkey', 'cmstartsortkeyprefix',
-                      'cmendsortkeyprefix', 'cmsort', 'cmdir', 'cmlimit', 'cmprop',
-                      'cmcontinue'
-                      ]
 
-CONSTRAINTS = {'cmtype' : ['page', 'subcat', 'file'],
-               'cmsort': ['sortkey', 'timestamp'],
-               'cmdir': ['asc', 'desc'],
-               'cmprop': ['ids', 'title', 'sortkey', 'sortkeyprefix', 'type', 'timestamp']}
+import copy
+import re
+import urllib
 
-DEFAULT_PARAMETERS = {'cmlimit': '500', 
-                      'cmprop': 'ids|title|type',
-                      'format' : 'xml'}
+import lxml
+
+from brandeis.bigdata.wiki.utils.constant import *
+import xml.etree.ElementTree as ET
+
 
 class Category_Crawler(object):
     '''
@@ -49,23 +41,18 @@ class Category_Crawler(object):
             if key not in KEY_SET:
                 del self._configurations[key]
         
-        if 'cmtitle' in self._configurations and 'cmpageid' in self._configurations:
+        if CM_TITLE in self._configurations and CM_PAGEID in self._configurations:
             """
             Just use 'cmpageid'
             """
-            del self._configurations['cmtitle']
+            del self._configurations[CM_TITLE]
         
         for key in CONSTRAINTS:
             if key in self._configurations:
-                values = self._configurations[key].split('|')
+                values = self._configurations[key].split(CONJUNCTION)
                 values = [value for value in values if value in CONSTRAINTS[key]]
-                self._configurations[key] = '|'.join(values)
+                self._configurations[key] = CONJUNCTION.join(values)
                         
-        WIKIPEDIA_API = 'http://en.wikipedia.org/w/api.php?'
-        QUERY_ACTION = 'action=query'
-        CATEGORY_SUBACTION = 'list=categorymembers'
-        
-        
         # Additional configurations
         for key in DEFAULT_PARAMETERS:
             if not key in self._configurations:
@@ -109,9 +96,9 @@ class Category_Crawler(object):
             return None
         root = ET.fromstring(self.buffer)
         
-        cms = root.find('query').find('categorymembers').findall('cm')
-        results = {'page':[], 'subcat':[]}
+        cms = root.find(QUERY_TAG).find(CATEGORY_TAG).findall(CATEGORY_CM_TAG)
+        results = {SUBKEY_PAGE:[], SUBKEY_SUBCAT:[]}
         for cm in cms:
-            if cm.attrib['type'] == 'page' or cm.attrib['type'] == 'subcat':
-                results[cm.attrib['type']].append((cm.attrib))
+            if cm.attrib[SUBKEY_TYPE] == SUBKEY_PAGE or cm.attrib[SUBKEY_TYPE] == SUBKEY_SUBCAT:
+                results[cm.attrib[SUBKEY_TYPE]].append((cm.attrib))
         return results
