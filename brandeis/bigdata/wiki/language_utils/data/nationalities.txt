@@ -1,0 +1,217 @@
+Afghanistan: noun--Afghan(s); adjective--Afghan
+Albania: noun--Albanian(s); adjective--Albanian
+Algeria: noun--Algerian(s); adjective--Algerian
+American Samoa: noun--American Samoan(s); adjective--American Samoan
+Andorra: noun--Andorran(s); adjective--Andorran
+Angola: noun--Angolan(s); adjective--Angolan
+Anguilla: noun--Anguillan(s); adjective--Anguillan
+Antarctica: noun--Antiguan(s); adjective--Antiguan
+Arctic Ocean: noun--Argentine(s); adjective--Argentine
+Aruba: noun--Aruban(s); adjective--Aruban
+Ashmore and Cartier Islands: noun--Australian(s); adjective--Australian
+Austria: noun--Austrian(s); adjective--Austrian
+The Bahamas: noun--Bahamian(s); adjective--Bahamian
+Bahrain: noun--Bahraini(s); adjective--Bahraini
+Baker Island: noun--Bangladeshi(s); adjective--Bangladesh
+Barbados: noun--Barbadian(s); adjective--Barbadian
+Bassas da India: noun--Belgian(s); adjective--Belgian
+Belize: noun--Belizean(s); adjective--Belizean
+Benin: noun--Beninese ; adjective--Beninese
+Bermuda: noun--Bermudian(s); adjective--Bermudian
+Bhutan: noun--Bhutanese ; adjective--Bhutanese
+Bolivia: noun--Bolivian(s); adjective Bolivian
+Botswana: noun--Motswana or Batswana;adjective--Motswana or Batswana
+Bouvet Island: noun--Brazilian(s); adjective--Brazilian
+British Indian Ocean Territory: noun--British Virgin Islander(s); adjective--British
+Brunei: noun--Bruneian(s); adjective--Bruneian
+Bulgaria: noun--Bulgarian(s); adjective--Bulgarian
+Burkina: noun--Burkinabe; adjective--Burkinabe
+Burma: noun--Burmese; adjective--Burmese
+Burundi: noun--Burundian(s); adjective--Burundi
+Cambodia: noun--Cambodian(s); adjective--Cambodian
+Cameroon: noun--Cameroonian(s); adjective--Cameroonian
+Canada: noun--Canadian(s); adjective--Canadian
+Cape Verde: noun--Cape Verdean(s); adjective--Cape Verdean
+Cayman Islands: noun--Caymanian(s); adjective--Caymanian
+Central African Republic: noun--Central African(s); adjective--Central African
+Chad: noun--Chadian(s); adjective--Chadian
+Chile: noun--Chilean(s); adjective--Chilean
+China: noun--Chinese ; adjective--Chinese
+Christmas Island: noun--Christmas Islander(s); adjective--Christmas Island
+Clipperton Island: noun--Cocos Islander(s); adjective--Cocos Islander(s)
+Colombia: noun--Colombian(s); adjective--Colombian
+Comoros: noun--Comoran(s); adjective--Comoran
+Congo: noun--Congolese ; adjective--Congolese or Congo
+Cook Islands: noun--Cook Islander(s); adjective--Cook Islander
+Coral Sea Islands: noun--Costa Rican(s); adjective--Costa Rican
+Cuba: noun--Cuban(s); adjective--Cuban
+Cyprus: noun--Cypriot(s); adjective--Cypriot
+Czechoslovakia: noun--Czechoslovak(s); adjective--Czechoslovak
+Czech Republic: noun--Czech(s); adjective--Czech
+Denmark: noun--Dane(s); adjective--Danish
+Djibouti: noun--Djiboutian(s); adjective--Djiboutian
+Dominica: noun--Dominican(s); adjective--Dominican
+Dominican Republic: noun--Dominican(s); adjective--Dominican
+Ecuador: noun--Ecuadorian(s); adjective--Ecuadorian
+Egypt: noun--Egyptian(s); adjective--Egyptian
+El Salvador: noun--Salvadoran(s); adjective--Salvadoran
+Equatorial Guinea: noun--Equatorial Guinean(s) or Equatoguinean(s);
+Ethiopia: noun--Ethiopian(s); adjective--Ethiopian
+Europa Island: noun--Falkland Islander(s); adjective--Falkland Island
+Faroe Islands: noun--Faroese ; adjective--Faroese
+Fiji: noun--Fijian(s); adjective--Fijian
+Finland: noun--Finn(s); adjective--Finnish
+France: noun--Frenchman or Frenchwoman; adjective--French
+French Guiana: noun--French Guianese ; adjective--French Guiana
+French Polynesia: noun--French Polynesian(s); adjective--French Polynesian
+French Southern and Antarctic Lands: noun--Gabonese ; adjective--Gabonese
+The Gambia: noun--Gambian(s); adjective--Gambian
+Gaza Strip: ;
+German Democratic Republic: noun--German(s); adjective--German
+Germany, Federal Republic of;Federal Republic of Germany: noun--German(s); adjective--German
+Ghana: noun--Ghanaian(s); adjective--Ghanaian
+Gibraltar: noun--Gibraltarian; adjective--Gibraltar
+Glorioso Islands: noun--Greek(s); adjective--Greek
+Greenland: noun--Greenlander(s); adjective--Greenlandic
+Grenada: noun--Grenadian(s); adjective--Grenadian
+Guadeloupe: noun--Guadeloupian(s); adjective--Guadeloupe
+Guam: noun--Guamanian(s); adjective--Guamanian
+Guatemala: noun--Guatemalan(s); adjective--Guatemalan
+Guernsey: noun--Channel Islander(s); adjective--Channel Islander
+Guinea: noun--Guinean(s); adjective--Guinean
+Guinea-Bissau: noun--Guinea-Bissauan(s); adjective--Guinea-Bissauan
+Guyana: noun--Guyanese ; adjective--Guyanese
+Haiti: noun--Haitian(s); adjective--Haitian
+Heard Island and McDonald Islands: noun--Honduran(s); adjective--Honduran
+Hong Kong: ;adjective--Hong Kong
+Howland Island: noun--Hungarian(s); adjective--Hungarian
+Iceland: noun--Icelander(s); adjective--Icelandic
+India: noun--Indian(s); adjective--Indian
+Indian Ocean: noun--Indonesian(s); adjective--Indonesian
+Iran: noun--Iranian(s); adjective--Iranian
+Iraq: noun--Iraqi(s); adjective--Iraqi
+Iraq - Saudi Arabia Neutral Zone: noun--Irishman or Irish ; adjective--Irish
+Israel: noun--Israeli(s); adjective--Israeli
+Italy: noun--Italian(s); adjective--Italian
+Ivory Coast: noun--Ivorian(s); adjective--Ivorian
+Jamaica: noun--Jamaican(s); adjective--Jamaican
+Jan Mayen: noun--Japanese ; adjective--Japanese
+Jarvis Island: noun--Channel Islander(s); adjective--Channel Islander
+Johnston Atoll: noun--Jordanian(s); adjective--Jordanian
+Juan de Nova Island: noun--Kenyan(s); adjective--Kenyan
+Kingman Reef: noun--Kiribatian(s); adjective--Kiribati
+Korea, North; North Korea: noun--Korean(s); adjective--Korean
+Korea, South; South Korea: noun--Korean(s); adjective--Korean
+Kuwait: noun--Kuwaiti(s); adjective--Kuwaiti
+Laos: noun--Lao or Laotian; adjective--Lao or Laotian
+Lebanon: noun--Lebanese ; adjective--Lebanese
+Lesotho: noun--Mosotho or Basotho ; adjective--Basotho
+Liberia: noun--Liberian(s); adjective--Liberian
+Libya: noun--Libyan(s); adjective--Libyan
+Liechtenstein: noun--Liechtensteiner(s); adjective--Liechtenstein
+Luxembourg: noun--Luxembourger(s); adjective--Luxembourg
+Macau: noun--Macanese ; adjective--Macau
+Madagascar: noun--Malagasy ; adjective--Malagasy
+Malawi: noun--Malawian(s); adjective--Malawian
+Malaysia: noun--Malaysian(s); adjective--Malaysian
+Maldives: noun--Maldivian(s); adjective--Maldivian
+Mali: noun--Malian(s); adjective--Malian
+Malta: noun--Maltese ; adjective--Maltese
+Man, Isle of; Isle of Man: noun--Manxman or Manxwoman; adjective--Manx
+Marshall Islands: noun--Marshallese; adjective--Marshallese
+Martinique: noun--Martiniquais ; adjective--Martiniquais
+Mauritania: noun--Mauritanian(s); adjective--Mauritanian
+Mauritius: noun--Mauritian(s); adjective--Mauritian
+Mayotte: noun--Mahorais ; adjective--Mahoran
+Mexico: noun--Mexican(s); adjective--Mexican
+Micronesia, Federated States of; Federated States of Micronesia: noun--Micronesian(s); adjective--Micronesian
+Midway Islands: noun--Monacan(s) or Monegasque(s); adjective--Monacan
+Mongolia: noun--Mongolian(s); adjective--Mongolian
+Montserrat: noun--Montserratian(s); adjective--Montserratian
+Morocco: noun--Moroccan(s); adjective--Moroccan
+Mozambique: noun--Mozambican(s); adjective--Mozambican
+Namibia: noun--Namibian(s); adjective--Namibian
+Nauru: noun--Nauruan(s); adjective--Nauruan
+Navassa Island: noun--Nepalese ; adjective--Nepalese
+Netherlands: noun--Dutchman or Dutchwoman; adjective--Dutch
+Netherlands Antilles: noun--Netherlands Antillean(s); adjective--Netherlands
+New Caledonia: noun--New Caledonian(s); adjective--New Caledonian
+New Zealand: noun--New Zealander(s); adjective--New Zealand
+Nicaragua: noun--Nicaraguan(s); adjective--Nicaraguan
+Niger: noun--Nigerien(s); adjective--Nigerien
+Nigeria: noun--Nigerian(s); adjective--Nigerian
+Niue: noun--Niuean(s); adjective--Niuean
+Norfolk Island: noun--Norfolk Islander(s); adjective--Norfolk Islander(s)
+Northern Mariana Islands: ;
+Norway: noun--Norwegian(s); adjective--Norwegian
+Oman: noun--Omani(s); adjective--Omani
+Pacific Islands, Trust Territory of the; Trust Territory of the Pacific Islands: noun--Palauan(s); adjective--Palauan
+Pacific Ocean: noun--Pakistani(s); adjective--Pakistani
+Palmyra Atoll: noun--Panamanian(s); adjective--Panamanian
+Papua New Guinea: noun--Papua New Guinean(s); adjective--Papua New Guinean
+Paracel Islands: noun--Paraguayan(s); adjective--Paraguayan
+Peru: noun--Peruvian(s); adjective--Peruvian
+Philippines: noun--Filipino(s); adjective--Philippine
+Pitcairn Islands: noun--Pitcairn Islander(s); adjective--Pitcairn Islander
+Poland: noun--Pole(s); adjective--Polish
+Portugal: noun--Portuguese ; adjective--Portuguese
+Puerto Rico: noun--Puerto Rican(s); adjective--Puerto Rican
+Qatar: noun--Qatari(s); adjective--Qatari
+Reunion: noun--Reunionese ; adjective--Reunionese
+Romania: noun--Romanian(s); adjective--Romanian
+Russia: noun--Russian(s); adjective--Russian
+Rwanda: noun--Rwandan(s);adjective--Rwandan(s)
+St. Helena: noun--St. Helenian(s); adjective--St. Helenian
+St. Kitts and Nevis: noun--Kittsian(s) or Nevisian(s); adjective--Kittsian or Nevisian
+St. Lucia: noun--St. Lucian(s); adjective--St. Lucian
+St. Pierre and Miquelon: noun--Frenchman or Frenchwoman; adjective--French
+St. Vincent and the Grenadines: noun--St. Vincentian(s) or Vincentian(s); adjectives--St.
+San Marino: noun--Sanmarinese ; adjective--Sanmarinese
+Sao Tome and Principe: noun--Sao Tomean(s); adjective--Sao Tomean
+Saudi Arabia: noun--Saudi(s); adjective--Saudi or Saudi Arabian
+Senegal: noun--Senegalese ; adjective--Senegalese
+Seychelles: noun--Seychellois ; adjective--Seychelles
+Sierra Leone: noun--Sierra Leonean(s); adjective--Sierra Leonean
+Singapore: noun--Singaporean(s); adjective--Singapore
+Solomon Islands: noun--Solomon Islander(s); adjective--Solomon Islander
+Somalia: noun--Somali(s); adjective--Somali
+South Africa: noun--South African(s); adjective--South African
+South Georgia and the South Sandwich Islands: noun--Soviet(s); adjective--Soviet
+Spain: noun--Spaniard(s); adjective--Spanish
+Spratly Islands: noun--Sri Lankan(s); adjective--Sri Lankan
+Sudan: noun--Sudanese ; adjective--Sudanese
+Suriname: noun--Surinamer(s); adjective--Surinamese
+Svalbard: noun--Swazi(s); adjective--Swazi
+Sweden: noun--Swede(s); adjective--Swedish
+Switzerland: noun--Swiss; adjective--Swiss
+Syria: noun--Syrian(s); adjective--Syrian
+Tanzania: noun--Tanzanian(s); adjective--Tanzanian
+Thailand: noun--Thai ; adjective--Thai
+Togo: noun--Togolese ; adjective--Togolese
+Tokelau: noun--Tokelauan(s); adjective--Tokelauan
+Tonga: noun--Tongan(s); adjective--Tongan
+Trinidad and Tobago: noun--Trinidadian(s) or Tobagonian(s); adjective--Trinidadian
+Tromelin Island: noun--Tunisian(s); adjective--Tunisian
+Turkey: noun--Turk(s); adjective--Turkish
+Turks and Caicos Islands: ;
+Tuvalu: noun--Tuvaluans(s); adjective--Tuvaluan
+Uganda: noun--Ugandan(s); adjective--Ugandan
+United Arab Emirates: noun--Emirian(s); adjective--Emirian
+United Kingdom: noun--Briton(s) or British ; adjective--British
+United States: noun--American(s); adjective--American
+Uruguay: noun--Uruguayan(s); adjective--Uruguayan
+Vanuatu: noun--Vanuatuan(s); adjective--Vanuatuan
+Vatican City: ;
+Venezuela: noun--Venezuelan(s); adjective--Venezuelan
+Vietnam: noun--Vietnamese ; adjective--Vietnamese
+Virgin Islands: noun--Virgin Islander(s); adjective--Virgin Islander
+Wake Island: noun--Wallisian(s) or Futunan(s) or Wallis or Futuna; 
+West Bank: ;
+Western Sahara: noun--Saharan(s) or Moroccan(s); adjective--Saharan or Moroccan
+Western Samoa: noun--Western Samoan(s); adjective--Western Samoan
+Yemen, People's Democratic Republic of; People's Democratic Republic of Yemen: noun--Yemeni(s); adjective--Yemeni
+Yugoslavia: noun--Yugoslav(s); adjective--Yugoslav
+Zaire: noun--Zairian(s); adjective--Zairian
+Zambia: noun--Zambian(s); adjective--Zambian
+Zimbabwe: noun--Zimbabwean(s); adjective--Zimbabwean
+Taiwan: noun--Chinese ; adjective--Chinese

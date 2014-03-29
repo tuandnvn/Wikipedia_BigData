@@ -81,11 +81,46 @@ DATA_PAGEID = 'pageid'
 DATA_TITLE = 'title'
 ROOT_PARAM = 'root_param'
 TREE = 'tree'
-
+TREE_COUNTER = 'tree_counter'
+TREE_CHECKED = 'tree_checked'
 
 """
 String process constants
 """
-BY_STR = 'by'
+PREPOSITION_STR = [' by ', ' from ', ' at '
+                   , ' in ', ' of ', ' who ', ' with ',
+                   ' about ', ' to ']
 NATIONALY_STR = 'by nationality'
+CATEGORY_PRE = 'Category:'
+NOUN_PREFIX = 'noun--'
+ADJ_PREFIX = 'adjective--'
+PLURAL_STR = '(s)'
+PLURAL_SUFFIX = 's'
+SAME_CAT_SEPARATE = ' or '
+DIFF_CAT_SEPARATE = ';'
+NATIONAL_NAME_SEPARATE = ';'
+NATIONAL_NAME = 'nation'
+NATIONALITY_NFORM = 'noun_nationality'
+NATIONALITY_AFORM = 'adj_nationality'
 
+
+'''
+Some string forms need to be filtered in different ways
+'''
+OTHER_DELETE_SUFFIX = ['stubs']
+GENDER_STR_FORM = ['male', 'female', 'women', 'woman']
+SPECIAL_STATE_STR_FORM = ['medieval ', 'Medieval ',
+                          'ancient ', 'Ancient ',
+                          'imperial ', 'Imperial ']
+ADDTIONAL_NATIONALITIES = ['African', 'European', 'Asian', 
+                           'North American', 'South American',
+                           'Antarctic', 'English', 'England']
+TEMPORAL_PREFIX = ['-century', '-era', 'dynasty']
+MISTAKEN_CATEGORY_STR_FORMS = ['member', 'members', 'people', 'fellow', 'fellows',
+                               'academic', 'academics', 'university', 'laureate', 'party' 
+                               'school', 'faculty', 'constellation']
+OVERLY_EXPLICIT_STR_FORMS = ['scientist']
+MISTAKEN_INDEX_STR_FORMS = ['crystallography', 'euclid', 'crystalline solid', 
+                            'euclidean solid geometry', 'euclidean geometry',
+                            'named after', 'metal', 'constellation', 'glacier',
+                            'water ice']
